@@ -20,6 +20,7 @@ class CreateFireIncidentsTable extends Migration
             $table->string('last_name');
             $table->string('email')->unique();
             $table->string('phone_number');
+            $table->binary('ip_address');
             $table->longText('Message');
             $table->timestamps();
         });

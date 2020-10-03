@@ -20,4 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/ipAddress','IpAddressController@index');
+//Route::resource('/ipAddress','IpAddressController');
 Route::resource('/fireIncidents','FireIncidentController');

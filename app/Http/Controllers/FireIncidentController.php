@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use App\FireIncident;
 use Illuminate\Support\Facades\Session;
@@ -32,6 +33,7 @@ class FireIncidentController extends Controller
         $fireIncident->email = request('email');
         $fireIncident->phone_number = request('phone_number');
         $fireIncident->message = request('message');
+        $fireIncident->ip_address = $request->ip();
         $fireIncident->save();
         return redirect('/fireIncidents')->with('status','Fire incident is created successfully');
     }
