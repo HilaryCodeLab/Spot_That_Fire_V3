@@ -8,6 +8,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <script src="https://cdn.earthdata.nasa.gov/tophat2/tophat2.js"
+                id="earthdata-tophat-script"></script>
 
         <!-- Styles -->
         <style>

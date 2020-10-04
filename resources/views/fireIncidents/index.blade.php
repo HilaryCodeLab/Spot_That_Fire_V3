@@ -7,7 +7,10 @@
 @section('content')
     <div class="container">
         <p>This page will show list of fire incidents</p>
-        <p><a href="{{route('fireIncidents.create')}}" class="btn btn-success">Create new</a></p>
+        <p>
+            <a href="{{route('fireIncidents.create')}}" class="btn btn-primary">Create new</a>
+            <a href="/" class="btn btn-secondary">Home</a>
+        </p>
         <table class="table">
             @if(session('status'))
                 <div class="alert alert-success" role="alert">
